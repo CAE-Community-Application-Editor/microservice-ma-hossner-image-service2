@@ -106,7 +106,14 @@ public class Images extends RESTService {
 
 
     // service method invocations 
-     
+    // !!! BUG !!!
+    try {
+      TimeUnit.SECONDS.sleep(3);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
+    // !!! ENDBUG !!!
+ 
 
 
 
